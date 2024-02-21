@@ -1,0 +1,211 @@
+/* Hanken Grotesk Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 770px;
+  max-height: 520px;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2)
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 38px;
+  order: 2;
+}
+
+.right h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 30px;
+}
+.stats-container {
+  display: flex;
+  flex-direction: column;
+}
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 18px;
+  border-radius: 15px;
+  border-bottom-left-radius: 1px solid red;
+}
+.stats-names {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.stats-names h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.stats-names img {
+  margin-right: 10px;
+}
+.stats-numbers h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: lightgray;
+}
+.stats-numbers span {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+
+.right button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  padding: 18px 0px;
+  margin-top: 10px;
+  transition: all 0.1 ease;
+}
+.right button:hover {
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.left {
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 70px;
+  height: 86%;
+}
+
+.left .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 30px;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.result .result-title {
+  font-size: 70px;
+  font-weight: 900;
+  color: white;
+}
+.result .full-mark {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(244, 244, 244, 0.3);
+}
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.comment-section .comment {
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  margin-top: 40px;
+
+}
+.under-comment {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color:  rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 590px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vh;
+    width: 100%;
+    max-height: 110vh;
+    height: 100%;
+    border-radius: 0px;
+  }
+  body {
+    display: flex;
+    align-items: start;
+    height: 110vh;;
+  }
+  .right {
+    width: 100%;
+    padding: 30px 20px ;
+  }
+  .right h1 {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    width: 100%;
+  }
+  .btn {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .left {
+    border-radius: 0px 0px 20px 20px;;
+  }
+  .right h1 {
+    margin-top: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .left-container {
+    padding: 0px 40px;
+  }
+}
